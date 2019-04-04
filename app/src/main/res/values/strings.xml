@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SmartEventsShare</string>
+
+    <string name="title_shop">Home</string>
+    <string name="title_gifts">Trending</string>
+    <string name="title_cart">Search</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="email">Email Id</string>
+    <string name="login">LOGIN</string>
+    <string name="passowrd">Password</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+
+    <string name="fb_app_id">296970554472763</string>
+    <string name="fb_login_protocol_scheme">fb296970554472763</string>
+
+    <string-array name="Category">
+        <item>Select Category</item>
+        <item>Birthday</item>
+        <item>Anniversary</item>
+        <item>Happy Moments</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

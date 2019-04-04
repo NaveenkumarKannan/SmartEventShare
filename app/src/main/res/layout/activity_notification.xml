@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/back"
+                    android:onClick="goBack"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:text="Notifications"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/cam"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient"
+            android:layout_margin="15dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Views"
+                android:layout_margin="3dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hearts"
+                android:layout_margin="3dp"
+                android:background="#fff"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            android:textColor="#000"
+                            android:textSize="21dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sep"
+                            android:textColor="#5c5c5c"
+                            android:textSize="21dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/circle"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/cherry_swash"
+                        android:gravity="left"
+                        android:text="Shalini View your Profile at 10.30 Pm "
+                        android:textColor="#ff6b78"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/eye"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:gravity="center"
+                            android:textColor="#ff8041"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a6a6a6"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="29"
+                            android:textColor="#000"
+                            android:textSize="21dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sep"
+                            android:textColor="#5c5c5c"
+                            android:textSize="21dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/circle"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/cherry_swash"
+                        android:gravity="left"
+                        android:text="Shalini View your Profile at 10.30 Pm "
+                        android:textColor="#ff6b78"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/eye"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16"
+                            android:gravity="center"
+                            android:textColor="#ff8041"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a6a6a6"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textColor="#000"
+                            android:textSize="21dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sep"
+                            android:textColor="#5c5c5c"
+                            android:textSize="21dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/circle"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/cherry_swash"
+                        android:gravity="left"
+                        android:text="Shalini View your Profile at 10.30 Pm "
+                        android:textColor="#ff6b78"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/eye"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:gravity="center"
+                            android:textColor="#ff8041"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a6a6a6"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textColor="#000"
+                            android:textSize="21dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sep"
+                            android:textColor="#5c5c5c"
+                            android:textSize="21dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/circle"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/cherry_swash"
+                        android:gravity="left"
+                        android:text="Shalini View your Profile at 10.30 Pm "
+                        android:textColor="#ff6b78"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/eye"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:gravity="center"
+                            android:textColor="#ff8041"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a6a6a6"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="21dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sep"
+                            android:gravity="center"
+                            android:textColor="#5c5c5c"
+                            android:textSize="21dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/circle"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/cherry_swash"
+                        android:gravity="left"
+                        android:text="Shalini View your Profile at 10.30 Pm "
+                        android:textColor="#ff6b78"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/eye"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:gravity="center"
+                            android:textColor="#ff8041"
+                            android:layout_gravity="center"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#a6a6a6"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

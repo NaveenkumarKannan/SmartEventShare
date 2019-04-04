@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LoginActivity"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:layout_gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#00123456"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:drawablePadding="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/back"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bilbo_swash_caps"
+                        android:text="Log In"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="28dp"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Name and Logo"
+                    android:gravity="center"
+                    android:textSize="50dp"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:padding="10dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="25dp"
+                android:layout_gravity="center"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etUserName"
+                    android:drawableLeft="@drawable/email"
+                    android:inputType="textEmailAddress"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:hint="User Name"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPwd"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="8dp"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:padding="10dp"
+                    android:hint="PassWord"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/show_hide_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/show_pwd"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/dancing_script_bold"
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic"/>
+                    <TextView
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dancing_script_bold"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:text="@string/forgot"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="Log In"
+                    android:textAllCaps="false"
+                    android:onClick="OnLogin"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account?"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/dancing_script_bold"/>
+                    <TextView
+                        android:onClick="onSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/dancing_script_bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/login_facebook"
+                        android:onClick="loginwithFacebook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb"/>
+                    <ImageView
+                        android:onClick="loginwithGoogle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/gmail"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

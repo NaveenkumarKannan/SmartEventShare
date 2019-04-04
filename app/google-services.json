@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "95998377574",
+    "firebase_url": "https://smarteventshare.firebaseio.com",
+    "project_id": "smarteventshare",
+    "storage_bucket": "smarteventshare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95998377574:android:83768e3bffa1ed29",
+        "android_client_info": {
+          "package_name": "com.project.naveen.smarteventsshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95998377574-oasmaepqjpso14f657bvu3jafie5tsu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6mUFRy8CeCcwpuoqsYDcpnP3wBwmCT7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

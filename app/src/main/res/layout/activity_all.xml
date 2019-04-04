@@ -1,0 +1,179 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AllActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/add"
+                        android:gravity="left"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/bilbo_swash_caps"
+                        android:gravity="center"
+                        android:text="Smart Event Sharing"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/cam"
+                        android:onClick="openSaveImage"
+                        android:gravity="end" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/aldrich"
+                        android:gravity="left"
+                        android:text="Birthday"
+                        android:padding="2dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvBirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbars="vertical"
+                        android:background="#efefef"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/aldrich"
+                        android:gravity="left"
+                        android:text="Anniversary"
+                        android:padding="2dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvAnniversary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbars="vertical"
+                        android:background="#efefef"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/aldrich"
+                        android:gravity="left"
+                        android:text="Other Events"
+                        android:padding="2dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbars="vertical"
+                        android:background="#efefef"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/bgBottomNavigation"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

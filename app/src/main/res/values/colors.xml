@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE4857</color>
+    <color name="colorPrimaryDark">#FE4857</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgBottomNavigation">#FE4857</color>
+
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+    <color name="white">#fff</color>
+    <color name="blue">#150bc7</color>
+</resources>

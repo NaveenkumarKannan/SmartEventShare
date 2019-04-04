@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/add"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bilbo_swash_caps"
+                        android:text="Smart Event Sharing"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:layout_weight="3"
+                        android:textSize="28dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:drawablePadding="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/cam"
+                        android:onClick="openSaveImage"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="55dp"/>
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/bgBottomNavigation"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

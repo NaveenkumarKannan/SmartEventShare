@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#00123456"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:visibility="gone"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/back"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:text="Profile"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/back"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Name and Logo"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:padding="10dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:gravity="">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SignUp using social website..."
+                android:textColor="@color/white"
+                android:fontFamily="@font/dancing_script_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_facebook"
+                    android:onClick="loginwithFacebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fb"/>
+                <ImageView
+                    android:onClick="loginwithGoogle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/gmail"/>
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Otherwise"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dancing_script_bold"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:background="@drawable/profile"
+                android:layout_gravity="center"
+                android:id="@+id/user_imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:roundAsCircle="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etName"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Name"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etUserName"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="User Name"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etPwd"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Password"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp"
+                android:inputType="textPassword"/>
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etConfirmPwd"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Confirm Password"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp"
+                android:inputType="textPassword"/>
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etPhNo"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Mobile Number"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp"
+                android:inputType="phone"/>
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etEmail"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Email ID"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress"/>
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etProStu"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Professional / Student"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <TextView
+                android:id="@+id/tvDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:text="DOB"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etShowWallCity"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Show Wall City"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etNativePlace"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Native Place"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etResidingCity"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Residing City"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/etCountry"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dancing_script_bold"
+                android:padding="10dp"
+                android:hint="Country"
+                android:textStyle="bold"
+                android:textColorHint="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="290dp"
+                android:layout_height="1dp"
+                android:background="@drawable/view"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:onClick="onSignUp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/edit"/>
+</android.support.design.widget.CoordinatorLayout>

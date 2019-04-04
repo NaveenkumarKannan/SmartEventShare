@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uploadactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/back"
+                    android:onClick="goBack"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:text="Coming soon..."
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="75dp"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_action_name"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

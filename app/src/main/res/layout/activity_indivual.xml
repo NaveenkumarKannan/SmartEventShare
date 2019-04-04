@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Indivual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:gravity="center"
+            android:background="#0e0e0e"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/back"
+                    android:onClick="goBack"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:text="Smart Event Sharing"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:visibility="gone"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/cam"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        android:background="#0e0e0e">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/profileImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:roundAsCircle="true"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="left"
+                    android:text="#Sri Ram"
+                    android:padding="2dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="Birthday Celebration @07/9/2018 "
+                    android:padding="2dp"
+                    android:textColor="#a6a6a6"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgette"
+            android:gravity="center"
+            android:text="Birthday Celebration"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+            android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="#0e0e0e">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/leftar"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="217dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/s1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="o o o o"
+                    android:textSize="12dp"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/rightar"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/eye"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvViews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Views"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/heart"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tvHearts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Hearts"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/comment"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Comments"
+                    android:textColor="#fff"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/act"
+               android:layout_margin="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape6"
+                android:fontFamily="@font/courgette"
+                android:hint="  Enter Your Comments"
+                android:padding="5dp"
+                android:layout_margin="4dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/send"
+               />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

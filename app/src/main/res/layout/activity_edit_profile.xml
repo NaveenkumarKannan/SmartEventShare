@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00123456"
+                android:gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/back"
+                        android:drawablePadding="10dp"
+                        android:gravity="left"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:drawableLeft="@drawable/back"
+                        android:fontFamily="@font/bilbo_swash_caps"
+                        android:gravity="center"
+                        android:text="Profile"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="App Name and Logo"
+                    android:textColor="#fff"
+                    android:textSize="50dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:gravity=""
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/profile"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundAsCircle="true" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Name"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="User Name"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etPhNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dancing_script_bold"
+                        android:text="Professional / Student"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rgProOrStu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Professional" />
+
+                        <RadioButton
+                            android:id="@+id/rbStu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etProStu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Professional / Student"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <TextView
+                    android:id="@+id/tvDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:padding="10dp"
+                    android:text="DOB"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/dancing_script_bold"
+                        android:text="Marital Status"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbMarried"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Married" />
+
+                        <RadioButton
+                            android:id="@+id/rbUnmarried"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unmarried" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etShowWallCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Show Wall City"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etNativePlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Native Place"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etResidingCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Residing City"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <EditText
+                    android:id="@+id/etCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:hint="Country"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/view" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dancing_script_bold"
+                    android:padding="10dp"
+                    android:text="UserId"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/shape"
+                    android:onClick="onEdit"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/edit"/>
+</android.support.design.widget.CoordinatorLayout>
